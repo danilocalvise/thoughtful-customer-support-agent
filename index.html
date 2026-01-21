@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thoughtful AI Support Agent</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="chat-card">
+        <header class="chat-header">
+          <div class="chat-title">
+            <span class="chat-pill">Thoughtful AI</span>
+            <h1>Customer Support Agent</h1>
+            <p>Ask about EVA, CAM, PHIL, or Thoughtful AI agents.</p>
+          </div>
+        </header>
+
+        <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+        <form id="chatForm" class="chat-input" autocomplete="off">
+          <label class="sr-only" for="userInput">Your question</label>
+          <input
+            id="userInput"
+            name="userInput"
+            type="text"
+            placeholder="Ask a question about Thoughtful AI..."
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
